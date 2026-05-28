@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadeem Rashid Arias — AI Engineer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ==================== PARTICLES BACKGROUND ==================== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">NRA</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#stack" class="nav-link">Stack</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Open to AI Engineer opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-name">Nadeem Rashid</span>
+                <span class="hero-surname accent">Arias</span>
+            </h1>
+            <div class="hero-typewriter">
+                <span class="typewriter-prefix">~/</span>
+                <span id="typewriter-text"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Software Engineer transitioning into <span class="accent">AI Engineering</span>.
+                Building real-world systems in Machine Learning, LLMs,
+                Computer Vision and Recommendation Systems from scratch.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View Projects
+                </a>
+                <a href="https://www.linkedin.com/in/nadeemrashidarias/" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/nadiflexx" target="_blank" class="btn btn-ghost">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">AI Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Years in Tech</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="terminal-title">nadeem@ai-engineer:~</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cmd"> python nadeem.py</span>
+                    </div>
+                    <div class="terminal-output">
+                        <div class="t-line delay-1">
+                            <span class="t-key">name</span>
+                            <span class="t-sep">:</span>
+                            <span class="t-str">"Nadeem Rashid Arias"</span>
+                        </div>
+                        <div class="t-line delay-2">
+                            <span class="t-key">role</span>
+                            <span class="t-sep">:</span>
+                            <span class="t-str">"AI Engineer (in progress)"</span>
+                        </div>
+                        <div class="t-line delay-3">
+                            <span class="t-key">location</span>
+                            <span class="t-sep">:</span>
+                            <span class="t-str">"Barcelona, Spain"</span>
+                        </div>
+                        <div class="t-line delay-4">
+                            <span class="t-key">focus</span>
+                            <span class="t-sep">:</span>
+                            <span class="t-arr">[</span>
+                        </div>
+                        <div class="t-line delay-5 t-indent">
+                            <span class="t-str">"LLMs"</span><span class="t-sep">,</span>
+                        </div>
+                        <div class="t-line delay-6 t-indent">
+                            <span class="t-str">"Computer Vision"</span><span class="t-sep">,</span>
+                        </div>
+                        <div class="t-line delay-7 t-indent">
+                            <span class="t-str">"RAG Systems"</span><span class="t-sep">,</span>
+                        </div>
+                        <div class="t-line delay-8 t-indent">
+                            <span class="t-str">"Recommendation Systems"</span>
+                        </div>
+                        <div class="t-line delay-9">
+                            <span class="t-arr">]</span>
+                        </div>
+                        <div class="t-line delay-10">
+                            <span class="t-key">status</span>
+                            <span class="t-sep">:</span>
+                            <span class="t-bool">True</span>
+                            <span class="t-comment"> # always learning</span>
+                        </div>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor-blink">█</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 01</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I am a <span class="accent">proactive and extroverted</span> Software
+                        Engineer with a strong background in backend development and a deep
+                        passion for Artificial Intelligence. I adapt easily to new environments
+                        and thrive when working in collaborative, challenging teams.
+                    </p>
+                    <p class="about-paragraph">
+                        My professional journey started in <span class="accent">QA Automation
+                            and Microservices</span> at companies like Indra and NTT DATA. Now I
+                        am fully transitioning into <span class="accent">AI Engineering</span>,
+                        combining my solid software foundation with advanced skills in Machine
+                        Learning, Deep Learning, LLMs and data architectures.
+                    </p>
+                    <p class="about-paragraph">
+                        I am currently pursuing a <span class="accent">Master in AI & Big Data
+                            (STUCOM)</span> and building a portfolio of real-world AI systems that
+                        solve meaningful problems — from medical diagnostics to intelligent
+                        recommendation platforms.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Proactive</span>
+                        <span class="tag">Team Player</span>
+                        <span class="tag">Continuous Learner</span>
+                        <span class="tag">Problem Solver</span>
+                        <span class="tag">Detail Oriented</span>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Barcelona, Spain</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-label">Education</span>
+                            <span class="info-value">Master FP AI & Big Data</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-label">Experience</span>
+                            <span class="info-value">3+ Years in Tech</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-label">Languages</span>
+                            <span class="info-value">ES · CA · EN</span>
+                        </div>
+                    </div>
+                    <div class="info-card highlight-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-circle-dot"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-label">Status</span>
+                            <span class="info-value">
+                                <span class="status-dot"></span>
+                                Open to opportunities
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section section-dark" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 02</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="llm">LLM / RAG</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="graph">Graph / Rec Sys</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- PROJECT 1: ENDO-AID -->
+                <article class="project-card" data-category="cv ml">
+                    <div class="project-card-header">
+                        <div class="project-icon">🏥</div>
+                        <div class="project-badges">
+                            <span class="project-badge badge-cv">Computer Vision</span>
+                            <span class="project-badge badge-ml">ML</span>
+                            <span class="project-badge badge-xai">XAI</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">ENDO-AID</h3>
+                    <p class="project-subtitle">
+                        Multimodal AI Clinical Decision Support System
+                    </p>
+                    <p class="project-description">
+                        Diagnostic simulator for colorectal cancer merging deep learning
+                        image analysis with structured patient data. Solves the
+                        <strong>Shortcut Learning</strong> problem through a dual ensemble
+                        architecture with real-time clinical explainability.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dual ensemble: Context-aware vs Tissue-only</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Grad-CAM visual heatmaps</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>SHAP values for tabular explainability</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>FastAPI + Streamlit production interface</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Grad-CAM</span>
+                        <span class="tech-tag">SHAP</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nadiflexx/ENDO-AID" target="_blank"
+                            class="project-link-btn btn-github">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: RAG SYSTEM -->
+                <article class="project-card featured" data-category="llm">
+                    <div class="featured-label">⭐ Featured</div>
+                    <div class="project-card-header">
+                        <div class="project-icon">📚</div>
+                        <div class="project-badges">
+                            <span class="project-badge badge-llm">LLM</span>
+                            <span class="project-badge badge-rag">RAG</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Multimodal RAG System</h3>
+                    <p class="project-subtitle">
+                        Triple-Strategy Retrieval Architecture
+                    </p>
+                    <p class="project-description">
+                        Advanced RAG architecture designed to be accurate, efficient and
+                        <strong>hallucination-resistant</strong>. Implements HyDE, Hybrid
+                        Search and semantic caching for production-grade document QA.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>HyDE + Hybrid Search (Vector + BM25)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>FlashRank Cross-Encoder reranking</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>2-level semantic cache with intent normalization</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>LangSmith observability + 100% Pytest coverage</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Groq</span>
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">BM25</span>
+                        <span class="tech-tag">FlashRank</span>
+                        <span class="tech-tag">LangSmith</span>
+                        <span class="tech-tag">Pydantic</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nadiflexx/Multimodal-RAG-System" target="_blank"
+                            class="project-link-btn btn-github">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: CINEGRAPH -->
+                <article class="project-card" data-category="graph ml">
+                    <div class="project-card-header">
+                        <div class="project-icon">🎬</div>
+                        <div class="project-badges">
+                            <span class="project-badge badge-graph">Graph AI</span>
+                            <span class="project-badge badge-ml">ML</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">CineGraph</h3>
+                    <p class="project-subtitle">
+                        Hybrid Recommendation & Social Network Platform
+                    </p>
+                    <p class="project-description">
+                        Personalized recommendation platform overcoming the
+                        <strong>cold start problem</strong> by combining knowledge graphs,
+                        collaborative analytics and semantic enrichment with social network
+                        dynamics.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Neo4j knowledge graph + social propagation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sentence-transformers semantic embeddings</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-source ETL: MovieLens, TMDB, OMDb, Trakt</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Evaluation: Precision@K, Recall@K, NDCG</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Neo4j</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">ETL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nadiflexx/StreamGraph" target="_blank"
+                            class="project-link-btn btn-github">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4: SMARTCARGO -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon">🚚</div>
+                        <div class="project-badges">
+                            <span class="project-badge badge-ml">Optimization</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SmartCargo</h3>
+                    <p class="project-subtitle">
+                        AI Delivery Planner & Route Optimizer
+                    </p>
+                    <p class="project-description">
+                        Logistics optimization platform for perishable goods solving the
+                        <strong>Vehicle Routing Problem (VRP)</strong> with a two-level
+                        AI approach combining clustering and evolutionary algorithms.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>K-Means strategic zone clustering</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Genetic Algorithms for route optimization</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Google OR-Tools constraint solving</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real map rendering via OpenStreetMap + OSRM</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">K-Means</span>
+                        <span class="tech-tag">Genetic Alg.</span>
+                        <span class="tech-tag">OR-Tools</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">OSRM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nadiflexx/Distribution-Platform-for-Perishable-Goods"
+                            target="_blank" class="project-link-btn btn-github">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5: RAINBOW AI -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon">🌦️</div>
+                        <div class="project-badges">
+                            <span class="project-badge badge-ml">ML Pipeline</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Rainbow AI</h3>
+                    <p class="project-subtitle">
+                        Weather & Optical Phenomena Prediction System
+                    </p>
+                    <p class="project-description">
+                        End-to-end meteorological forecasting system for Catalonia.
+                        Complete ML pipeline from automated data ingestion to interactive
+                        visualization with rainbow probability calculation.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>7 LightGBM models for multi-variable prediction</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Automated ETL from AEMET + Open-Meteo APIs</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Heuristic rainbow probability engine</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Interactive Plotly dashboard + weather alerts</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">LightGBM</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">ETL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nadiflexx/Meteorological-Forecasting-Platform" target="_blank"
+                            class="project-link-btn btn-github">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECH STACK SECTION ==================== -->
+    <section class="section" id="stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 03</span>
+                <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="stack-grid">
+
+                <div class="stack-category">
+                    <div class="stack-category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <span class="stack-icon">🐍</span>
+                            <span class="stack-name">Python</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🔥</span>
+                            <span class="stack-name">PyTorch</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">⚙️</span>
+                            <span class="stack-name">Scikit-learn</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🚀</span>
+                            <span class="stack-name">XGBoost / LightGBM</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🦜</span>
+                            <span class="stack-name">LangChain</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <div class="stack-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases & Data Eng.</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <span class="stack-icon">🐘</span>
+                            <span class="stack-name">PostgreSQL</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🕸️</span>
+                            <span class="stack-name">Neo4j</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🍃</span>
+                            <span class="stack-name">MongoDB</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="74"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🔄</span>
+                            <span class="stack-name">ETL Pipelines</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="76"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">📦</span>
+                            <span class="stack-name">Vector Databases</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="68"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <div class="stack-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>APIs & Deployment</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <span class="stack-icon">⚡</span>
+                            <span class="stack-name">FastAPI</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🎈</span>
+                            <span class="stack-name">Streamlit</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🐳</span>
+                            <span class="stack-name">Docker</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <div class="stack-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Backend Engineering</h3>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <span class="stack-icon">☕</span>
+                            <span class="stack-name">Java</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🌱</span>
+                            <span class="stack-name">Spring Boot</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="stack-item">
+                            <span class="stack-icon">🔺</span>
+                            <span class="stack-name">Angular</span>
+                            <div class="stack-bar">
+                                <div class="stack-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 04</span>
+                <h2 class="section-title">
+                    Experience & <span class="accent">Education</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <!-- STUCOM MASTER -->
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon edu">🎓</div>
+                            <div class="timeline-meta">
+                                <span class="timeline-period">Sept 2025 – Jun 2026</span>
+                                <span class="timeline-type education">Education</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">
+                            Master FP in Artificial Intelligence & Big Data
+                        </h3>
+                        <span class="timeline-company">STUCOM Centre d'Estudis</span>
+                        <p class="timeline-description">
+                            Advanced specialization focused on practical AI application.
+                            Building systems in Machine Learning, Deep Learning, Computer
+                            Vision, NLP and Big Data architectures with real-world projects.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tl-tag">Machine Learning</span>
+                            <span class="tl-tag">Deep Learning</span>
+                            <span class="tl-tag">NLP</span>
+                            <span class="tl-tag">Big Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NTT DATA SOFTWARE ENGINEER -->
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon work">💼</div>
+                            <div class="timeline-meta">
+                                <span class="timeline-period">Dec 2024 – Present</span>
+                                <span class="timeline-type work">Work</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Software Engineer / Backend Developer</h3>
+                        <span class="timeline-company">NTT DATA (via Tuyú Technology)</span>
+                        <p class="timeline-description">
+                            Autonomous role with direct client communication and technical
+                            estimation. Led development of end-to-end medical teleselection
+                            platform and contributed to new financial insurance products
+                            including Allianz Flexible Savings.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tl-tag">Java</span>
+                            <span class="tl-tag">Spring Boot</span>
+                            <span class="tl-tag">Microservices</span>
+                            <span class="tl-tag">Angular</span>
+                            <span class="tl-tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NTT DATA JUNIOR -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon work">🏢</div>
+                            <div class="timeline-meta">
+                                <span class="timeline-period">May 2024 – Dec 2024</span>
+                                <span class="timeline-type work">Work</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Junior Microservices Developer</h3>
+                        <span class="timeline-company">NTT DATA (via Tuyú Technology)</span>
+                        <p class="timeline-description">
+                            Immersion in corporate software development for the insurance
+                            sector (Allianz Vida). Backend logic implementation with Java and
+                            Spring Boot, plus frontend support with Angular.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tl-tag">Java</span>
+                            <span class="tl-tag">Spring Boot</span>
+                            <span class="tl-tag">Angular</span>
+                            <span class="tl-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INDRA QA -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon work">🔬</div>
+                            <div class="timeline-meta">
+                                <span class="timeline-period">Jun 2021 – May 2024</span>
+                                <span class="timeline-type work">Work</span>
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">
+                            QA Automation Engineer → Systems Engineer
+                        </h3>
+                        <span class="timeline-company">Indra</span>
+                        <p class="timeline-description">
+                            Progressed from junior tester to leading QA strategy and
+                            automated test architecture using Selenium WebDriver and Java
+                            under Agile methodologies.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tl-tag">Selenium</span>
+                            <span class="tl-tag">Java</span>
+                            <span class="tl-tag">Agile / Scrum</span>
+                            <span class="tl-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 05</span>
+                <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-text">
+                    <p class="contact-intro">
+                        I am currently <span class="accent">open to AI Engineer and
+                            ML Engineer opportunities</span>. If you have an interesting
+                        project or position, let's talk.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:nadi-1999@hotmail.es" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">nadi-1999@hotmail.es</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-link-arrow"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nadeemrashidarias/" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">nadeemrashidarias</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-link-arrow"></i>
+                        </a>
+                        <a href="https://github.com/nadiflexx" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">GitHub</span>
+                                <span class="contact-link-value">nadiflexx</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-visual">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="ct-line">
+                                <span class="ct-prompt">$</span>
+                                <span class="ct-text"> hire nadeem</span>
+                            </p>
+                            <p class="ct-output">
+                                ✅ Candidate loaded successfully
+                            </p>
+                            <p class="ct-output accent-text">
+                                → Skills: AI / ML / LLMs / CV
+                            </p>
+                            <p class="ct-output accent-text">
+                                → Status: Available
+                            </p>
+                            <p class="ct-output accent-text">
+                                → Location: Barcelona (Remote OK)
+                            </p>
+                            <p class="ct-line">
+                                <span class="ct-prompt">$</span>
+                                <span class="ct-cursor-blink">█</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">NRA</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Built with passion for AI. Barcelona 2026.
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/nadiflexx" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nadeemrashidarias/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:nadi-1999@hotmail.es">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
