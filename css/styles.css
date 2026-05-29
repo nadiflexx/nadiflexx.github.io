@@ -1754,6 +1754,60 @@ a {
   transform: translateY(-2px);
 }
 
+.profile-focus-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.profile-focus-strip span {
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  line-height: 1.2;
+}
+
+.profile-focus-strip span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(168, 85, 247, 0.18),
+    transparent
+  );
+  transform: translateX(-120%);
+  animation: focus-sheen 5s ease-in-out infinite;
+}
+
+.profile-focus-strip span:nth-child(2)::before {
+  animation-delay: 0.7s;
+}
+
+.profile-focus-strip span:nth-child(3)::before {
+  animation-delay: 1.4s;
+}
+
+@keyframes focus-sheen {
+  0%,
+  35% {
+    transform: translateX(-120%);
+  }
+
+  55%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
 /* ============================================================
    RESPONSIVE — PROFILE CARD
    ============================================================ */
@@ -1779,6 +1833,10 @@ a {
   }
 
   .profile-socials {
+    justify-content: center;
+  }
+
+  .profile-focus-strip {
     justify-content: center;
   }
 

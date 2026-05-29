@@ -22,6 +22,9 @@ const translations = {
     /* PROFILE */
     "profile.available": "Available",
     "profile.role": "AI Engineer · Barcelona",
+    "profile.focus.rag": "RAG Systems",
+    "profile.focus.cv": "Computer Vision",
+    "profile.focus.ml": "ML Pipelines",
 
     /* TERMINAL */
     "terminal.role": '"AI Engineer (in progress)"',
@@ -173,6 +176,9 @@ const translations = {
     /* PROFILE */
     "profile.available": "Disponible",
     "profile.role": "AI Engineer · Barcelona",
+    "profile.focus.rag": "Sistemas RAG",
+    "profile.focus.cv": "Visión por Computador",
+    "profile.focus.ml": "Pipelines ML",
 
     /* TERMINAL */
     "terminal.role": '"Ingeniero IA (en progreso)"',
@@ -314,6 +320,24 @@ const translations = {
    I18N ENGINE
    ============================================================ */
 let currentLang = "en";
+const LANGUAGE_STORAGE_KEY = "portfolioLanguage";
+
+function getStoredLanguage() {
+  try {
+    const storedLang = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    return translations[storedLang] ? storedLang : null;
+  } catch {
+    return null;
+  }
+}
+
+function storeLanguage(lang) {
+  try {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+  } catch {
+    /* localStorage may be blocked in private or restricted contexts. */
+  }
+}
 
 function applyTranslations(lang) {
   const t = translations[lang];
@@ -340,7 +364,9 @@ function applyTranslations(lang) {
 
   /* Actualizar botones del selector */
   document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.lang === lang);
+    const isActive = btn.dataset.lang === lang;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", String(isActive));
   });
 
   /* Actualizar lang del <html> */
@@ -358,6 +384,7 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
     const lang = btn.dataset.lang;
     if (lang !== currentLang) {
       applyTranslations(lang);
+      storeLanguage(lang);
     }
   });
 });
@@ -459,9 +486,15 @@ window.addEventListener("scroll", () => {
 const navToggle = document.getElementById("nav-toggle");
 const navLinks = document.getElementById("nav-links");
 
-navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
+navToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+});
 document.querySelectorAll(".nav-link").forEach((link) => {
-  link.addEventListener("click", () => navLinks.classList.remove("open"));
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  });
 });
 
 /* ============================================================
@@ -506,7 +539,12 @@ function restartTypewriter(newPhrases) {
   typeTimeout = setTimeout(typewriter, 400);
 }
 
-setTimeout(typewriter, 800);
+typeTimeout = setTimeout(typewriter, 800);
+
+const initialLang = getStoredLanguage();
+if (initialLang && initialLang !== currentLang) {
+  applyTranslations(initialLang);
+}
 
 /* ============================================================
    COUNTER ANIMATION

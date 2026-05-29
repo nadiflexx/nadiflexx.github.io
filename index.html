@@ -54,18 +54,33 @@
 
         <!-- LANGUAGE SELECTOR -->
         <div class="lang-selector" id="lang-selector">
-          <button class="lang-btn active" data-lang="en" aria-label="English">
+          <button
+            class="lang-btn active"
+            data-lang="en"
+            aria-label="English"
+            aria-pressed="true"
+          >
             <span class="flag-icon">🇬🇧</span>
             <span class="lang-code">EN</span>
           </button>
           <div class="lang-divider"></div>
-          <button class="lang-btn" data-lang="es" aria-label="Español">
+          <button
+            class="lang-btn"
+            data-lang="es"
+            aria-label="Español"
+            aria-pressed="false"
+          >
             <span class="flag-icon">🇪🇸</span>
             <span class="lang-code">ES</span>
           </button>
         </div>
 
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -89,7 +104,7 @@
           <span id="typewriter-text"></span>
           <span class="typewriter-cursor">|</span>
         </div>
-        <p class="hero-description" data-i18n="hero.description">
+        <p class="hero-description" data-i18n-html="hero.description">
           Software Engineer transitioning into
           <span class="accent">AI Engineering</span>. Building real-world
           systems in Machine Learning, LLMs, Computer Vision and Recommendation
@@ -103,6 +118,7 @@
           <a
             href="https://www.linkedin.com/in/nadeemrashidarias/"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-secondary"
           >
             <i class="fab fa-linkedin"></i>
@@ -111,6 +127,7 @@
           <a
             href="https://github.com/nadiflexx"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-ghost"
           >
             <i class="fab fa-github"></i>
@@ -168,6 +185,7 @@
               <a
                 href="https://github.com/nadiflexx"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="profile-social-btn"
                 aria-label="GitHub"
               >
@@ -176,6 +194,7 @@
               <a
                 href="https://www.linkedin.com/in/nadeemrashidarias/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="profile-social-btn"
                 aria-label="LinkedIn"
               >
@@ -188,6 +207,11 @@
               >
                 <i class="fas fa-envelope"></i>
               </a>
+            </div>
+            <div class="profile-focus-strip" aria-label="AI focus areas">
+              <span data-i18n="profile.focus.rag">RAG Systems</span>
+              <span data-i18n="profile.focus.cv">Computer Vision</span>
+              <span data-i18n="profile.focus.ml">ML Pipelines</span>
             </div>
           </div>
         </div>
@@ -471,6 +495,7 @@
               <a
                 href="https://github.com/nadiflexx/ENDO-AID"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="project-link-btn btn-github"
               >
                 <i class="fab fa-github"></i>
@@ -541,6 +566,7 @@
               <a
                 href="https://github.com/nadiflexx/Multimodal-RAG-System"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="project-link-btn btn-github"
               >
                 <i class="fab fa-github"></i>
@@ -609,6 +635,7 @@
               <a
                 href="https://github.com/nadiflexx/StreamGraph"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="project-link-btn btn-github"
               >
                 <i class="fab fa-github"></i>
@@ -675,6 +702,7 @@
               <a
                 href="https://github.com/nadiflexx/Distribution-Platform-for-Perishable-Goods"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="project-link-btn btn-github"
               >
                 <i class="fab fa-github"></i>
@@ -741,6 +769,7 @@
               <a
                 href="https://github.com/nadiflexx/Meteorological-Forecasting-Platform"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="project-link-btn btn-github"
               >
                 <i class="fab fa-github"></i>
@@ -1106,6 +1135,7 @@
               <a
                 href="https://www.linkedin.com/in/nadeemrashidarias/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
               >
                 <div class="contact-link-icon">
@@ -1120,6 +1150,7 @@
               <a
                 href="https://github.com/nadiflexx"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link"
               >
                 <div class="contact-link-icon">
@@ -1192,12 +1223,16 @@
             Built with passion for AI. Barcelona 2026.
           </p>
           <div class="footer-links">
-            <a href="https://github.com/nadiflexx" target="_blank"
+            <a
+              href="https://github.com/nadiflexx"
+              target="_blank"
+              rel="noopener noreferrer"
               ><i class="fab fa-github"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/nadeemrashidarias/"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fab fa-linkedin"></i
             ></a>
             <a href="mailto:nadi-1999@hotmail.es"
